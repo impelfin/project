@@ -1,5 +1,25 @@
-# chatapp/.env
-**/.env
+## .env
+.env
+
+## c
+c/*
+c/*.o
+c/**/*
+!c/**/
+!c/**/*.c
+!c/**/lib/
+!c/**/lib/*.h
+!c/**/Makefile
+!c/**/Makefile.*
+
+## nodejs
+node/**/node_modules
+node/**/package-lock.json
+node/conf/*
+
+## python venv 
+python/**/.venv
+python/**/__pycache__/
 
 # chatbot_langchain/constants.py
 **/constants.py
