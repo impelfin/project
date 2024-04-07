@@ -1,4 +1,8 @@
 import os
+from dotenv import load_dotenv
+
+# load .env
+load_dotenv()
 
 from openai import AsyncOpenAI
 
@@ -17,7 +21,7 @@ class TutorialState(rx.State):
         client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
         session = await client.chat.completions.create(
             model="gpt-3.5-turbo",
-            messages[{"role": "user", "content": self.question}],
+            messages=[{"role": "user", "content": self.question}],
             stop=None,
             temperature=0.7,
             stream=True,
@@ -33,10 +37,12 @@ class TutorialState(rx.State):
         yield
 
         async for item in session:
-            if hasattr(item.choices[0].delta, "content"):
+            if hasattr(item, "choices") and item.choices and hasattr(item.choices[0], "delta") and hasattr(item.choices[0].delta, "content"):
                 if item.choices[0].delta.content is None:
                     # presence of 'None' indicates the end of the response
                     break
                 answer += item.choices[0].delta.content
                 self.chat_history[-1] = (self.chat_history[-1][0], answer)
                 yield
+            else:
+                break  # Break the loop if there's no valid response
