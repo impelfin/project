@@ -61,13 +61,12 @@ nbclient==0.10.0
 nbconvert==7.16.3
 nbformat==5.10.4
 nh3==0.2.17
-openai==1.16.2
 packaging==24.0
 pandocfilters==1.5.1
 parso==0.8.4
 pexpect==4.9.0
 pickleshare==0.7.5
-Pillow==5.4.1
+pillow==10.3.0
 pipdeptree==2.16.2
 pipreqs==0.5.0
 pkginfo==1.10.0
@@ -81,7 +80,6 @@ pydantic==1.10.15
 Pygments==2.17.2
 pyproject_hooks==1.0.0
 python-dateutil==2.9.0.post0
-python-dotenv==1.0.1
 python-engineio==4.9.0
 python-multipart==0.0.9
 python-socketio==5.11.2
@@ -119,7 +117,6 @@ tinycss2==1.2.1
 tomli==2.0.1
 tomlkit==0.12.4
 tornado==6.4
-tqdm==4.66.2
 traitlets==5.14.2
 twine==5.0.0
 typer==0.12.1
