@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>소수 판별</title>
+  </head>
+  <body>
+    <h3>소수 판별</h3>
+    <hr />
+    <input id="number" type="number" size="10" />
+    <button type="button" id="check" onclick="send()">Check</button>
+    <p id="result"></p>
+    <script>
+      let primeWorker = new Worker("prime.js"); // 워크 태스크 생성
+
+      function send() {
+        let number = document.getElementById("number").value;
+        // 워커 태스크로 전송
+        primeWorker.postMessage(number);
+      }
+
+      // 리스너 등록
+      primeWorker.onmessage = function (e) {
+        // 결과 출력
+        document.getElementById("result").textContent = e.data;
+      };
+    </script>
+  </body>
+</html>
