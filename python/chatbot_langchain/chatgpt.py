@@ -1,15 +1,25 @@
+#!/usr/bin/env python
+
 import os
 import sys
 
 import openai
 from langchain.chains import ConversationalRetrievalChain, RetrievalQA
-from langchain.chat_models import ChatOpenAI
-from langchain.document_loaders import DirectoryLoader, TextLoader
-from langchain.embeddings import OpenAIEmbeddings
+# from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
+# from langchain.document_loaders import DirectoryLoader, TextLoader
+from langchain_community.document_loaders import DirectoryLoader
+from langchain_community.document_loaders import TextLoader
+# from langchain.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
+from langchain_openai import ChatOpenAI
+from langchain_community.embeddings import OpenAIEmbeddings
 from langchain.indexes import VectorstoreIndexCreator
 from langchain.indexes.vectorstore import VectorStoreIndexWrapper
-from langchain.llms import OpenAI
-from langchain.vectorstores import Chroma
+# from langchain.llms import OpenAI
+from langchain_community.llms import OpenAI
+# from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 
 import constants
 
@@ -45,7 +55,8 @@ while True:
     query = input("Prompt: ")
   if query in ['quit', 'q', 'exit']:
     sys.exit()
-  result = chain({"question": query, "chat_history": chat_history})
+  # result = chain({"question": query, "chat_history": chat_history})
+  result = chain.invoke({"question": query, "chat_history": chat_history})
   print(result['answer'])
 
   chat_history.append((query, result['answer']))  
