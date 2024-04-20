@@ -12,3 +12,5 @@ app3:
 	uvicorn $@:app --host 0.0.0.0 --port 3000 --reload
 app4:
 	uvicorn $@:app --host 0.0.0.0 --port 3000 --reload
+readcsv:
+	uvicorn $@:app --host 0.0.0.0 --port 3000 --reload
