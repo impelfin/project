@@ -87,7 +87,7 @@ for word, count in data:
 
 print(wordlist)
 visual = Visualization(wordlist)
-visual.makeWordCloud()
 visual.makeBarChart()
+visual.makeWordCloud()
 
 print('finished')
