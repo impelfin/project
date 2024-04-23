@@ -61,4 +61,3 @@ data = df.loc[['gPntCnt', 'hPntCnt', 'accExamCnt', 'statusDt']]
 print(type(data))
 print(data)
 print('-' * 50)
-
