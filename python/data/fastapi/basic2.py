@@ -15,7 +15,7 @@ async def hello():
 async def hello_with_name(name:str):
     return "Hello with name. your name is " + name
 
-@app.get(path='/hello/query')
+@app.get(path='/hello')
 async def hello_with_querystring(name:str):
     return "Hello with name. your name is " + name
 
