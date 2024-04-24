@@ -1,12 +1,11 @@
-import requests
-import json
+import requests, json
 import pandas as pd
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from fastapi import FastAPI
 import os.path
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.relpath("../dataProject/")))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.relpath("./")))
 secret_file = os.path.join(BASE_DIR, '../secret.json')
 
 with open(secret_file) as f:
@@ -31,7 +30,7 @@ async def Hello():
 
 @app.get('/getdata')
 async def getData():
-    url = 'http://apis.data.go.kr/1352000/ODMS_COVID_02/callCovid02Api'
+    url = 'https://apis.data.go.kr/1352000/ODMS_COVID_02/callCovid02Api'
 
     # today = (datetime.today() - timedelta(1)).strftime("%Y%m%d")
     today = (datetime.today() - relativedelta(months=8)).strftime("%Y%m%d")
@@ -73,5 +72,9 @@ async def getData():
     print(validItem)
     print('-' * 50)
 
-    return validItem
+    df = pd.DataFrame.from_dict(validItem, orient='index').rename(columns={0:'result'})
+    print(type(df))
+    print(df)
+    print('-' * 50)
 
+    return validItem
