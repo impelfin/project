@@ -51,7 +51,7 @@ async def useradd(id=None, name=None, dept=None):
         return result
 
 @app.get("/userupdate")
-async def updateadd(id=None, name=None, dept=None):
+async def userupdaet(id=None, name=None, dept=None):
     if id is None:
         return "학번을 입력하세요"
     else:
@@ -64,7 +64,7 @@ async def updateadd(id=None, name=None, dept=None):
         return result
 
 @app.get("/userdel")
-async def updateadd(id=None):
+async def userdel(id=None):
     if id is None:
         return "학번을 입력하세요"
     else:
