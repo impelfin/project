@@ -20,7 +20,7 @@ node/conf/*
 ## python venv 
 python/**/.venv
 python/**/__pycache__/
-python/secret.json
+python/**/secret.json
 
 # chatbot_langchain/constants.py
 **/constants.py
