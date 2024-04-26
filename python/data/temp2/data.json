@@ -34,6 +34,7 @@
     },
     {
       "id": 5,
+      "name": "green",
       "year": 2004,
       "color": "#E2583E",
       "pantone_value": "17-1456"
