@@ -1,6 +1,6 @@
 from fastapi import FastAPI 
+from pandas import Series
 import pandas as pd 
-import numpy as np
 
 app = FastAPI()
 
@@ -13,12 +13,19 @@ def getcsv():
     csv_file = 'seoul_hospital.csv'
 
     df = pd.read_csv(csv_file)
-    print(df)
-    xdf = df['좌표정보(X)'].fillna('111')
+
+    orgdf = df[['사업장명', '업태구분명']]
+    # orgdf = df.loc[:,['사업장명', '업태구분명']]
+
+    # 울릉도 => 위도 : 1300026.73, 경도 : 1948720.66
+    xdf = df['좌표정보(X)']
+    xdf = xdf.fillna('1300026.73')
+    ydf = df['좌표정보(Y)']
+    ydf = ydf.fillna('1948720.66')
     
-    print(xdf)
-    print(xdf.isna().sum())
-    # rows = list(df['좌표정보(X)'])
-    
-    # print(df)
-    return  
+    newdf = pd.concat([orgdf, xdf, ydf], axis=1)
+    print(newdf)
+
+    # print(newdf.isna().sum())
+    newdf = dict(newdf)
+    return f'result: {newdf}'
