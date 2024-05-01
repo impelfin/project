@@ -9,7 +9,7 @@ def healthCheck():
 
 @app.get('/selectdata')
 def selectData():
-    param = {"loc":["query","id"]}
-    result = requests.get('http://192.168.1.64:3000/getMongo', params=param)
-    print(result.json())
-    return 
+    result = requests.get('http://192.168.1.54:3000/getMongo')
+    data = result.json()
+    print(data)
+    return data
