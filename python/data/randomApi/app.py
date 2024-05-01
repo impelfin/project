@@ -13,7 +13,7 @@ def randomInt(n=None, max=None):
     if (n and max) == None:
         n = 5
         max = 5
-    elif n == None :
+    elif n == None:
         n = 5
     elif max == None:
         max = 5
@@ -25,4 +25,4 @@ def randomInt(n=None, max=None):
         while a in alist:
             a = random.randint(1, max) 
         alist.append(a)
-    return {'result': alist}
+    return alist
