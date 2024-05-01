@@ -25,4 +25,4 @@ def randomInt(n=None, max=None):
         while a in alist:
             a = random.randint(1, max) 
         alist.append(a)
-    return alist
+    return {'result': alist}
