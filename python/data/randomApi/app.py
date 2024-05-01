@@ -13,7 +13,7 @@ def randomInt(n=None, max=None):
     if (n and max) == None:
         n = 10
         max = 10
-    elif n is None and max is not None:
+    elif (n is None and max is not None):
         n = 10
         max = int(max)
     elif max == None:
