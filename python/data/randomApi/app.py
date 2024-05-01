@@ -11,12 +11,12 @@ def healthCheck():
 def randomInt(n=None, max=None):
     alist=[]    
     if (n and max) == None:
-        n = 5
-        max = 5
+        n = 10
+        max = 10
     elif n == None:
-        n = 5
+        n = 10
     elif max == None:
-        max = 5
+        max = 10
     else:
         n = int(n)
         max = int(max)
