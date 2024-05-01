@@ -25,4 +25,5 @@ def randomInt(n=None, max=None):
         while a in alist:
             a = random.randint(1, max) 
         alist.append(a)
-    return alist
+    print({'resultCode' : 200, 'result' : alist})
+    return {'resultCode' : 200, 'result' : alist}
