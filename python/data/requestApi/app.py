@@ -9,7 +9,6 @@ def healthCheck():
 
 @app.get('/selectdata')
 def selectData():
-    result = requests.get('http://192.168.1.54:3000/getMongo')
-    data = result.json()
-    print(data)
-    return data
+    result = requests.get('http://192.168.1.53:3000/getrandom')
+    print(result)
+    return result
