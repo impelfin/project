@@ -5,6 +5,8 @@ from bson.objectid import ObjectId
 import os.path
 import json
 
+# pip install pydantic==1.10.14
+
 pydantic.json.ENCODERS_BY_TYPE[ObjectId] = str
 
 app = FastAPI()
