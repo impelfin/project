@@ -9,7 +9,7 @@ def healthCheck():
 
 @app.get('/getrandom')
 def randomInt(n=None, max=None):
-    alist=[]    
+    alist=[]
     if n is None and max is not None:
         if int(max) < 10:
             n = int(max)
@@ -26,9 +26,9 @@ def randomInt(n=None, max=None):
     else:
         n = int(n)
         max = int(max)
-        if n < max:
-            n = 10
-            max = 10
+        if n > max:
+            return f'n은 max보다 작아야 합니다.'
+            exit
     for i in range(n):
         a = random.randint(1, max) 
         while a in alist:
