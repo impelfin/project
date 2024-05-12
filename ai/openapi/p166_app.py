@@ -1,8 +1,4 @@
 import openai
-import os
-
-# API 키 설정
-openai.api_key = os.environ["OPENAI_API_KEY"]
 
 user_input = input("AI와 채팅할 내용을 입력하세요 (종료하려면 end를 입력하세요) \n[나] : ")
 

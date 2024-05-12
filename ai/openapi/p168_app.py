@@ -1,9 +1,5 @@
 import openai
-import os
 import json
-
-# API 키 설정
-openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # 호출 함수
 def get_price_info_temp(product_name):

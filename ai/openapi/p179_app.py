@@ -15,3 +15,4 @@ for data in response['data']:
     # display(Image(image_url, format='png')) # 이미지를 화면에 표시
                
     print(image_url.split("?")[0].split("/")[-1])
+    

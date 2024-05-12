@@ -1,8 +1,4 @@
 import openai
-import os
-
-# API 키 설정
-openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # 대화 메시지 정의
 messages = [

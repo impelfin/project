@@ -1,10 +1,5 @@
 import openai
-import os
-import json
 import textwrap
-
-# API 키 설정
-openai.api_key = os.environ["OPENAI_API_KEY"]
 
 def response_from_ChatAI(user_content, r_num=1):
     
