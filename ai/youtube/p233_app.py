@@ -51,6 +51,11 @@ def download_youtube_as_mp3(video_url, folder, file_name=None):
         'extract_audio': True,      # 다양한 옵션 지정                    
         'format': 'bestaudio', # 다운로드 형식 지정 (최적)
         'outtmpl': outtmpl_str,     # 다운로드 경로 지정
+        'postprocessors': [{
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
+        }],
         'noplaylist': True,
         'quiet': True,
         'no_warnings': True,

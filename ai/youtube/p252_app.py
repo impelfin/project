@@ -51,6 +51,11 @@ def download_youtube_as_mp3(video_url, folder, file_name=None):
         'quiet': True,
         'no_warnings': True,
         'extract_audio': True,
+        'postprocessors': [{
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
+        }]
     }
 
     try:
