@@ -1,7 +1,7 @@
 import openai
 from IPython.display import Image, display
 
-org_image_file = "./download/org_image_for_variation.png" # 원본 이미지
+org_image_file = "./data/org_image_for_variation.png" # 원본 이미지
 
 # 이미지 변형 생성
 response = openai.Image.create_variation( 

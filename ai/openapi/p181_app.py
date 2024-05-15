@@ -2,8 +2,8 @@ import openai
 from IPython.display import Image, display
 from pathlib import Path
 
-org_image_file = "./download/org_image_for_edit.png"   # 원본 이미지
-mask_image_file = "./download/mask_image_for_edit.png" # 마스크 이미지
+org_image_file = "./data/org_image_for_edit.png"   # 원본 이미지
+mask_image_file = "./data/mask_image_for_edit.png" # 마스크 이미지
 
 # 이미지 편집 생성 
 response = openai.Image.create_edit( 
