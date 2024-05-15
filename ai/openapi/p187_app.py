@@ -3,7 +3,7 @@ import openai
 file_path = "./data/서연의_하루_TTS_배경음악_short.mp3"
 audio_file = open(file_path, "rb")
 
-# 지정한 형식으로 음성 추출
+# 지정한 형식으로 음성 추출 후 영어번역
 response = openai.Audio.translate(
             model="whisper-1",
             file=open(file_path, "rb"),
