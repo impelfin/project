@@ -17,7 +17,7 @@ st.sidebar.write('**당신의 선택**:', your_option)
 # ---------- 메인(Main) 화면 구성 --------------------
 st.title("스트림릿의 사이드바 사용 예")
 
-folder = 'https://github.com/impelfin/project/tree/main/ai/07_streamlit/data'
+folder = 'https://github.com/impelfin/project/tree/main/ai/07_streamlit/data/'
 
 # selectbox_options의 요소에 따라서 보여줄 이미지 파일 리스트(selectbox_options의 요소와 순서를 일치시킴)
 image_files = ['Vermeer.png', 'Gogh.png', 'Munch.png', 'ShinYoonbok.png'] # 이미지 파일 리스트
