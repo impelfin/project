@@ -26,5 +26,6 @@ image_files = ['Vermeer.png', 'Gogh.png', 'Munch.png', 'ShinYoonbok.png'] # 이�
 selectbox_options_index = selectbox_options.index(your_option) # selectbox_options의 리스트 인덱스 찾기
 image_file = image_files[selectbox_options_index] # 선택한 항목에 맞는 이미지 파일 지정
 image_urls = folder + image_file
-st.image(image_urls, caption=your_option)        # 이미지 표시
+# st.image(image_urls, caption=your_option)        # 이미지 표시
+st.image(image_urls, caption=image_urls)        # 이미지 표시
 
