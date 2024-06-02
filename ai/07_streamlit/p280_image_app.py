@@ -7,7 +7,7 @@ st.title("스트림릿의 이미지 표시 사용 예")
 
 # 1) 컴퓨터에 있는 이미지 파일을 열어서 표시
 st.subheader("1. 컴퓨터에 있는 이미지 파일을 표시")
-image_file = './data/sample_image.png' # 이미지 파일 경로
+image_file = './data/avenue.jpg' # 이미지 파일 경로
 image_local = Image.open(image_file)        # Image.open() 함수로 이미지 파일 열기
 st.image(image_local, width=350, caption='컴퓨터에 있는 이미지 파일을 표시') # 이미지 표시
 
