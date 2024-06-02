@@ -27,6 +27,7 @@ image_files = [
 
 # 셀렉트박스에서 선택한 항목에 따라 이미지 표시
 selectbox_options_index = selectbox_options.index(your_option) # selectbox_options의 리스트 인덱스 찾기
-image_url = image_files[selectbox_options_index] # 선택한 항목에 맞는 이미지 파일 지정
+# image_url = image_files[selectbox_options_index] # 선택한 항목에 맞는 이미지 파일 지정
+image_url = 'https://github.com/impelfin/project/blob/main/ai/07_streamlit/data/Vermeer.png'
 st.image(image_url, caption=your_option)        # 이미지 표시
 
