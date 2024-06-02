@@ -1,5 +1,3 @@
-# 유튜브 동영상을 요약하고 번역하는 웹 앱
-
 import my_yt_tran  # 유튜브 동영상 정보와 자막을 가져오기 위한 모듈 임포트
 import my_text_sum # 텍스트를 요약하기 위한 모듈
 import streamlit as st
@@ -8,12 +6,14 @@ import os
 import tiktoken
 import textwrap
 import deepl
+from youtube_transcript_api import YouTubeTranscriptApi
+from youtube_transcript_api._errors import NoTranscriptFound, TranscriptsDisabled
 
 # 텍스트의 토큰 수를 계산하는 함수(모델: "gpt-3.5-turbo")
 def calc_token_num(text, model="gpt-3.5-turbo"):
     enc = tiktoken.encoding_for_model(model)
     encoded_list = enc.encode(text) # 텍스트 인코딩해 인코딩 리스트 생성
-    token_num= len(encoded_list)    # 인코딩 리스트의 길이로 토큰 개수 계산
+    token_num = len(encoded_list)    # 인코딩 리스트의 길이로 토큰 개수 계산
     
     return token_num
 
@@ -21,9 +21,9 @@ def calc_token_num(text, model="gpt-3.5-turbo"):
 def divide_text(text, token_num):
     req_max_token = 2000 # 응답을 고려해 설정한 최대 요청 토큰
     
-    divide_num = int(token_num/req_max_token) + 1 # 나눌 계수를 계산
+    divide_num = int(token_num / req_max_token) + 1 # 나눌 계수를 계산
     divide_char_num = int(len(text) / divide_num) # 나눌 문자 개수 
-    divide_width =  divide_char_num + 20 # wrap() 함수로 텍스트 나눌 때 여유분 고려해 20 더함
+    divide_width = divide_char_num + 20 # wrap() 함수로 텍스트 나눌 때 여유분 고려해 20 더함
 
     divided_text_list = textwrap.wrap(text, width=divide_width)
     
@@ -45,7 +45,17 @@ def summarize_youtube_video(video_url, selected_lang, trans_method):
     st.write(f"[제목] {yt_title}, [길이(분:초)] {yt_duration}") # 제목 및 상영 시간출력
     
     # 유튜브 동영상 자막 가져오기
-    yt_transcript = my_yt_tran.get_transcript_from_youtube(video_url, lang)
+    try:
+        yt_transcript = my_yt_tran.get_transcript_from_youtube(video_url, lang)
+    except NoTranscriptFound:
+        st.error("자막을 찾을 수 없습니다. 다른 동영상을 시도해 주세요.")
+        return
+    except TranscriptsDisabled:
+        st.error("이 동영상의 자막이 비활성화되어 있습니다.")
+        return
+    except Exception as e:
+        st.error(f"자막을 가져오는 중 오류가 발생했습니다: {str(e)}")
+        return
 
     # 자막 텍스트의 토큰 수 계산
     token_num = calc_token_num(yt_transcript)
@@ -69,7 +79,7 @@ def summarize_youtube_video(video_url, selected_lang, trans_method):
     else:
         shorten_num = 120 
         
-    shorten_final_summary = textwrap.shorten(final_summary, shorten_num, placeholder=' [..이하 생략..]')
+    shorten_final_summary = textwrap.shorten(final_summary, width=shorten_num, placeholder=' [..이하 생략..]')
     st.write("- 자막 요약(축약):", shorten_final_summary) # 최종 요약문 출력 (축약)
     # st.write("- 자막 요약:", final_summary) # 최종 요약문 출력
 
@@ -79,9 +89,9 @@ def summarize_youtube_video(video_url, selected_lang, trans_method):
         elif trans_method == 'DeepL':
             trans_result = my_text_sum.traslate_english_to_korean_using_deepL(final_summary)
 
-        shorten_trans_result = textwrap.shorten(trans_result, 120 ,placeholder=' [..이하 생략..]')
+        shorten_trans_result = textwrap.shorten(trans_result, width=120, placeholder=' [..이하 생략..]')
         st.write("- 한국어 요약(축약):", shorten_trans_result) # 한국어 번역문 출력 (축약)
-        #st.write("- 한국어 요약:", trans_result) # 한국어 번역문 출력
+        # st.write("- 한국어 요약:", trans_result) # 한국어 번역문 출력
         
 # ------------------- 콜백 함수 --------------------
 def button_callback():
@@ -91,7 +101,7 @@ def button_callback():
 st.sidebar.title("요약 설정 ")
 url_text = st.sidebar.text_input("유튜브 동영상 URL을 입력하세요.", key="input")
 
-clicked_for_clear = st.sidebar.button('URL 입력 내용 지우기',  on_click=button_callback)
+clicked_for_clear = st.sidebar.button('URL 입력 내용 지우기', on_click=button_callback)
 
 yt_lang = st.sidebar.radio('유튜브 동영상 언어 선택', ['한국어', '영어'], index=1, horizontal=True)
     
