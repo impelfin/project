@@ -27,3 +27,4 @@ selectbox_options_index = selectbox_options.index(your_option) # selectbox_optio
 image_file = image_files[selectbox_options_index] # 선택한 항목에 맞는 이미지 파일 지정
 image_local = Image.open(folder + image_file)     # Image.open() 함수로 이미지 파일 열기
 st.image(image_local, caption=your_option)        # 이미지 표시
+
