@@ -19,10 +19,10 @@ st.title("스트림릿의 사이드바 사용 예")
 
 # selectbox_options의 요소에 따라서 보여줄 이미지 파일 리스트(selectbox_options의 요소와 순서를 일치시킴)
 image_files = [
-    'https://github.com/impelfin/project/blob/main/ai/07_streamlit/data/Vermeer.png', 
-    'https://github.com/impelfin/project/blob/main/ai/07_streamlit/data/Gogh.png', 
-    'https://github.com/impelfin/project/blob/main/ai/07_streamlit/data/Munch.png', 
-    'https://github.com/impelfin/project/blob/main/ai/07_streamlit/data/ShinYoonbok.png'
+    'http://github.com/impelfin/project/blob/main/ai/07_streamlit/data/Vermeer.png', 
+    'http://github.com/impelfin/project/blob/main/ai/07_streamlit/data/Gogh.png', 
+    'http://github.com/impelfin/project/blob/main/ai/07_streamlit/data/Munch.png', 
+    'http://github.com/impelfin/project/blob/main/ai/07_streamlit/data/ShinYoonbok.png'
     ] # 이미지 파일 리스트
 
 # 셀렉트박스에서 선택한 항목에 따라 이미지 표시
