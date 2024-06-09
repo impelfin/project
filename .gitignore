@@ -18,9 +18,9 @@ node/**/package-lock.json
 node/conf/*
 
 ## python venv 
-python/**/.venv
-python/**/__pycache__/
-python/**/secret.json
+**/.venv
+**/__pycache__/
+**/secret.json
 
 # chatbot_langchain/constants.py
 **/constants.py
