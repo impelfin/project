@@ -13,7 +13,7 @@ print("Documents loaded successfully")
 print(f"Loaded documents: {documents}")
 
 # Document 객체 생성
-document_objects = [Document(text=doc.text, extra_info=doc.metadata) for doc in documents]
+document_objects = [Document(text=doc.text) for doc in documents]
 
 # 임베딩 모델 준비
 embed_model = LangchainEmbedding(HuggingFaceEmbeddings(
@@ -44,6 +44,7 @@ query_engine = index.as_query_engine()
 print("Query engine created successfully")
 
 # 질의응답
-response = query_engine.query("이 웹페이지에서 전하고 싶은 말은 무엇인가요? 한국어로 대답해 주세요.")
-print(response)
-
+query="이 웹페이지에서 전하고 싶은 말은 무엇인가요? 한국어로 대답해 주세요."
+response = query_engine.query(query)
+print(f"Query: {query}", end="\n")
+print(f"Response: {response}", end="\n")
