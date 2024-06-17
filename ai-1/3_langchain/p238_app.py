@@ -1,6 +1,7 @@
 from langchain.chains import LLMChain
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
+from langchain.chains import SequentialChain
 
 ## 첫 번째 체인
 
@@ -54,7 +55,6 @@ chain2 = LLMChain(
 
 ## SequentialChain으로 두 개의 체인 연결하기
 
-from langchain.chains import SequentialChain
 
 # SequentialChain으로 두 개의 체인을 연결
 overall_chain = SequentialChain(
