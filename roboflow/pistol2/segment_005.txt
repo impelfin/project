@@ -1,0 +1,1533 @@
+{
+    "00:40.880": [
+        {
+            "x": 103.5,
+            "y": 552.5,
+            "width": 205.0,
+            "height": 255.0,
+            "confidence": 0.6548570394515991,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "878d3eb4-4908-4cdc-9ab8-f09b93af10d7"
+        }
+    ],
+    "00:40.920": [
+        {
+            "x": 103.5,
+            "y": 553.5,
+            "width": 203.0,
+            "height": 255.0,
+            "confidence": 0.6618884801864624,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "ae0f8af3-df54-4d01-9e85-613b9349d402"
+        }
+    ],
+    "00:40.960": [
+        {
+            "x": 104.0,
+            "y": 556.0,
+            "width": 204.0,
+            "height": 250.0,
+            "confidence": 0.7002505660057068,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "06fdaf9e-0303-453e-895a-d5c81b503643"
+        }
+    ],
+    "00:41.000": [
+        {
+            "x": 104.0,
+            "y": 555.0,
+            "width": 206.0,
+            "height": 248.0,
+            "confidence": 0.6861929893493652,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "3031e4c6-a338-4fbf-ae98-567af69ede3a"
+        }
+    ],
+    "00:41.039": [
+        {
+            "x": 103.5,
+            "y": 553.0,
+            "width": 207.0,
+            "height": 248.0,
+            "confidence": 0.7628471851348877,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "2d27eae2-dabe-44ea-9f1f-41b1466438c0"
+        }
+    ],
+    "00:41.080": [
+        {
+            "x": 104.0,
+            "y": 550.5,
+            "width": 208.0,
+            "height": 255.0,
+            "confidence": 0.7827956676483154,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "3be815f9-ce0f-4527-9344-6bd8707142db"
+        }
+    ],
+    "00:41.120": [
+        {
+            "x": 104.0,
+            "y": 546.0,
+            "width": 208.0,
+            "height": 264.0,
+            "confidence": 0.735588788986206,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "b8fd929b-5ba1-4c5d-8e80-3f42b349ddcf"
+        }
+    ],
+    "00:41.160": [
+        {
+            "x": 103.0,
+            "y": 544.5,
+            "width": 206.0,
+            "height": 267.0,
+            "confidence": 0.7733179926872253,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "4cadc3e8-9ff7-4a4c-8a23-b77a0d05e4ed"
+        }
+    ],
+    "00:41.200": [
+        {
+            "x": 101.5,
+            "y": 545.5,
+            "width": 203.0,
+            "height": 267.0,
+            "confidence": 0.8070321083068848,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "a173cdc0-14f4-4a35-92dc-92c707b8df2c"
+        }
+    ],
+    "00:41.240": [
+        {
+            "x": 107.0,
+            "y": 538.0,
+            "width": 212.0,
+            "height": 282.0,
+            "confidence": 0.7329370975494385,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "4b9f29eb-f0c9-4f26-8b7a-7370648cbec9"
+        }
+    ],
+    "00:41.280": [
+        {
+            "x": 106.0,
+            "y": 543.5,
+            "width": 210.0,
+            "height": 271.0,
+            "confidence": 0.7530674934387207,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "60e9905c-aea0-46e4-8e1e-9c650e301af6"
+        }
+    ],
+    "00:41.320": [
+        {
+            "x": 101.5,
+            "y": 539.0,
+            "width": 199.0,
+            "height": 286.0,
+            "confidence": 0.7407983541488647,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "c45110e2-cc8d-465d-84d2-7c7430a1eb85"
+        }
+    ],
+    "00:41.359": [
+        {
+            "x": 101.5,
+            "y": 539.0,
+            "width": 199.0,
+            "height": 286.0,
+            "confidence": 0.7392634153366089,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "a6900839-2085-46ff-989c-66e7bb6fdbf4"
+        }
+    ],
+    "00:41.400": [
+        {
+            "x": 102.5,
+            "y": 539.5,
+            "width": 201.0,
+            "height": 275.0,
+            "confidence": 0.6573379039764404,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "6aa6a199-d84b-4e68-bc5d-edccdb3943fb"
+        }
+    ],
+    "00:41.440": [
+        {
+            "x": 101.5,
+            "y": 540.5,
+            "width": 199.0,
+            "height": 271.0,
+            "confidence": 0.81960129737854,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "046d8dba-cea0-40a7-96d2-a17b56529196"
+        }
+    ],
+    "00:41.480": [
+        {
+            "x": 100.5,
+            "y": 536.0,
+            "width": 197.0,
+            "height": 284.0,
+            "confidence": 0.708561897277832,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "4e2f5f42-091d-4ee7-b787-dfcf90240f45"
+        }
+    ],
+    "00:41.520": [
+        {
+            "x": 100.5,
+            "y": 536.0,
+            "width": 197.0,
+            "height": 284.0,
+            "confidence": 0.7104083299636841,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "1c3940b1-b2b5-4b1a-8c87-3a873d4f04d1"
+        }
+    ],
+    "00:41.560": [
+        {
+            "x": 102.5,
+            "y": 533.0,
+            "width": 201.0,
+            "height": 286.0,
+            "confidence": 0.7347574234008789,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "9952e3d7-d63b-46bc-adb3-840f4e2dc523"
+        }
+    ],
+    "00:41.600": [
+        {
+            "x": 100.0,
+            "y": 532.0,
+            "width": 196.0,
+            "height": 300.0,
+            "confidence": 0.7599847316741943,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "f66cc7aa-334f-477c-80aa-b4880b6d8822"
+        }
+    ],
+    "00:41.640": [
+        {
+            "x": 101.5,
+            "y": 537.0,
+            "width": 199.0,
+            "height": 286.0,
+            "confidence": 0.805781364440918,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "fba56f87-8c31-4163-8c3e-bf2c39feff1a"
+        }
+    ],
+    "00:41.679": [
+        {
+            "x": 101.0,
+            "y": 533.5,
+            "width": 198.0,
+            "height": 293.0,
+            "confidence": 0.7869067192077637,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "35ba6af3-3304-4f91-86df-ea9b89bc892f"
+        }
+    ],
+    "00:41.720": [
+        {
+            "x": 100.5,
+            "y": 529.5,
+            "width": 195.0,
+            "height": 299.0,
+            "confidence": 0.7061538696289062,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "ae273f78-8fac-45df-a4cf-0f4672236511"
+        }
+    ],
+    "00:41.760": [
+        {
+            "x": 101.0,
+            "y": 537.5,
+            "width": 196.0,
+            "height": 279.0,
+            "confidence": 0.8256589770317078,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "f12e25c3-0e15-48ac-bc73-05d3d29ee3b2"
+        }
+    ],
+    "00:41.800": [
+        {
+            "x": 100.5,
+            "y": 534.5,
+            "width": 197.0,
+            "height": 285.0,
+            "confidence": 0.8290842175483704,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "e9d41619-952b-41b7-a758-0932bd961674"
+        }
+    ],
+    "00:41.840": [
+        {
+            "x": 101.5,
+            "y": 531.0,
+            "width": 199.0,
+            "height": 298.0,
+            "confidence": 0.7049680948257446,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "a801feca-24c5-4391-bd13-43fd4c65a806"
+        }
+    ],
+    "00:41.880": [
+        {
+            "x": 101.5,
+            "y": 534.5,
+            "width": 199.0,
+            "height": 283.0,
+            "confidence": 0.8273894190788269,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "9370fd85-e32f-4ee9-9bff-82525d109296"
+        }
+    ],
+    "00:41.920": [
+        {
+            "x": 101.0,
+            "y": 524.5,
+            "width": 196.0,
+            "height": 301.0,
+            "confidence": 0.7665373086929321,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "b76f93c2-75ea-4921-89bd-08e57df66212"
+        }
+    ],
+    "00:41.960": [
+        {
+            "x": 101.0,
+            "y": 527.0,
+            "width": 196.0,
+            "height": 294.0,
+            "confidence": 0.8088032007217407,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "bc34ee08-da39-4434-ba6f-8fd35c4239d8"
+        }
+    ],
+    "00:42.000": [
+        {
+            "x": 101.5,
+            "y": 525.0,
+            "width": 195.0,
+            "height": 296.0,
+            "confidence": 0.8249781727790833,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "7c7c4358-99a6-4e75-bb6b-bbbb3a4c75b2"
+        }
+    ],
+    "00:42.039": [
+        {
+            "x": 103.5,
+            "y": 526.0,
+            "width": 199.0,
+            "height": 294.0,
+            "confidence": 0.8067071437835693,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "4bbbfee1-f17a-473e-80b2-5b7adfd9001f"
+        }
+    ],
+    "00:42.080": [
+        {
+            "x": 102.0,
+            "y": 520.0,
+            "width": 196.0,
+            "height": 294.0,
+            "confidence": 0.729922354221344,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "81d0413d-8d72-4aff-944a-1562249de19e"
+        }
+    ],
+    "00:42.120": [
+        {
+            "x": 103.0,
+            "y": 523.5,
+            "width": 198.0,
+            "height": 293.0,
+            "confidence": 0.6946604251861572,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "ca05898b-eee6-46bf-8507-f2731ad8b554"
+        }
+    ],
+    "00:42.160": [
+        {
+            "x": 103.0,
+            "y": 528.5,
+            "width": 200.0,
+            "height": 291.0,
+            "confidence": 0.8190048933029175,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "00b7d938-534a-4318-b1be-411b7044100b"
+        }
+    ],
+    "00:42.200": [
+        {
+            "x": 103.5,
+            "y": 528.0,
+            "width": 199.0,
+            "height": 290.0,
+            "confidence": 0.7892646193504333,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "56022352-c631-47dc-a790-6c549029f4e1"
+        }
+    ],
+    "00:42.240": [
+        {
+            "x": 102.5,
+            "y": 529.0,
+            "width": 195.0,
+            "height": 290.0,
+            "confidence": 0.6623685359954834,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "e9dd36ea-ae19-4ca2-a175-8dc1ffb085ba"
+        }
+    ],
+    "00:42.280": [
+        {
+            "x": 102.5,
+            "y": 525.0,
+            "width": 195.0,
+            "height": 294.0,
+            "confidence": 0.7174251079559326,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "9ad151cb-059d-458b-8d5c-ceb2e26fb55c"
+        }
+    ],
+    "00:42.320": [
+        {
+            "x": 102.5,
+            "y": 527.0,
+            "width": 197.0,
+            "height": 284.0,
+            "confidence": 0.7861073017120361,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "90a39e2c-15ef-46fb-ac13-36a488b815ba"
+        }
+    ],
+    "00:42.359": [
+        {
+            "x": 102.0,
+            "y": 524.5,
+            "width": 196.0,
+            "height": 285.0,
+            "confidence": 0.7295730113983154,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "3e7352ea-23b9-43d1-b2b9-e216e9dad534"
+        }
+    ],
+    "00:42.400": [
+        {
+            "x": 101.0,
+            "y": 526.5,
+            "width": 194.0,
+            "height": 289.0,
+            "confidence": 0.8398277759552002,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "7d766fc3-0e03-4b75-8748-9b2d9c740eea"
+        }
+    ],
+    "00:42.440": [
+        {
+            "x": 102.5,
+            "y": 526.5,
+            "width": 195.0,
+            "height": 287.0,
+            "confidence": 0.8916284441947937,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "01344c5e-328a-438d-82f6-36b86346ea64"
+        }
+    ],
+    "00:42.480": [
+        {
+            "x": 101.5,
+            "y": 525.5,
+            "width": 197.0,
+            "height": 291.0,
+            "confidence": 0.8482123017311096,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "cc209ea3-019a-4b29-b339-69172e7c75d3"
+        }
+    ],
+    "00:42.520": [
+        {
+            "x": 101.0,
+            "y": 524.5,
+            "width": 198.0,
+            "height": 289.0,
+            "confidence": 0.8525387048721313,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "0faa15ef-cf02-46c2-a0b7-fb0ce1e25676"
+        }
+    ],
+    "00:42.560": [
+        {
+            "x": 100.5,
+            "y": 524.0,
+            "width": 195.0,
+            "height": 292.0,
+            "confidence": 0.8784584999084473,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "7b298cf6-7b2e-4e58-9d2a-324676688cdf"
+        }
+    ],
+    "00:42.600": [
+        {
+            "x": 100.5,
+            "y": 521.0,
+            "width": 195.0,
+            "height": 288.0,
+            "confidence": 0.8758289217948914,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "49669c6f-4828-45f5-a9e7-8c9183144bb1"
+        }
+    ],
+    "00:42.640": [
+        {
+            "x": 100.5,
+            "y": 523.0,
+            "width": 195.0,
+            "height": 286.0,
+            "confidence": 0.8546903133392334,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "77205ed0-b4c3-419c-b84a-e5464552497f"
+        }
+    ],
+    "00:42.679": [
+        {
+            "x": 100.5,
+            "y": 523.0,
+            "width": 195.0,
+            "height": 286.0,
+            "confidence": 0.8558424711227417,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "2b2658a8-5393-4b1a-b80b-8a68bedf33fd"
+        }
+    ],
+    "00:42.720": [
+        {
+            "x": 99.5,
+            "y": 519.0,
+            "width": 193.0,
+            "height": 286.0,
+            "confidence": 0.8408528566360474,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "8effa447-2341-4262-bd28-89d6eaa5b8f4"
+        }
+    ],
+    "00:42.760": [
+        {
+            "x": 99.5,
+            "y": 518.5,
+            "width": 193.0,
+            "height": 287.0,
+            "confidence": 0.8531419038772583,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "4fc1bb77-0f14-43ca-96a0-3605056e04fb"
+        }
+    ],
+    "00:42.800": [
+        {
+            "x": 99.5,
+            "y": 519.5,
+            "width": 193.0,
+            "height": 285.0,
+            "confidence": 0.8857049942016602,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "00665a82-7ae6-4cad-815c-8edd2e95ad7c"
+        }
+    ],
+    "00:42.840": [
+        {
+            "x": 100.5,
+            "y": 520.0,
+            "width": 193.0,
+            "height": 284.0,
+            "confidence": 0.9044163227081299,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "ba05581c-19d6-4a59-b905-233db0b67ac9"
+        }
+    ],
+    "00:42.880": [
+        {
+            "x": 100.0,
+            "y": 518.0,
+            "width": 190.0,
+            "height": 278.0,
+            "confidence": 0.8858188986778259,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "77d7dd5b-be35-43e7-a5d7-7b2cf7b4316f"
+        }
+    ],
+    "00:42.920": [
+        {
+            "x": 100.5,
+            "y": 517.5,
+            "width": 191.0,
+            "height": 281.0,
+            "confidence": 0.880789577960968,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "209b5c6f-76c6-45c7-83cb-683914a836b9"
+        }
+    ],
+    "00:42.960": [
+        {
+            "x": 100.5,
+            "y": 517.5,
+            "width": 189.0,
+            "height": 283.0,
+            "confidence": 0.8761305212974548,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "4ec95fe6-21a0-432f-8a65-5741f6dc9635"
+        }
+    ],
+    "00:43.000": [
+        {
+            "x": 100.0,
+            "y": 516.5,
+            "width": 190.0,
+            "height": 283.0,
+            "confidence": 0.8749914169311523,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "3d521e17-f667-4167-841d-5e1d6ab5ca17"
+        }
+    ],
+    "00:43.040": [
+        {
+            "x": 99.5,
+            "y": 513.5,
+            "width": 193.0,
+            "height": 279.0,
+            "confidence": 0.8668127655982971,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "8a71c527-80f2-4129-a34c-922f7deec936"
+        }
+    ],
+    "00:43.080": [
+        {
+            "x": 99.5,
+            "y": 510.5,
+            "width": 189.0,
+            "height": 275.0,
+            "confidence": 0.8741493821144104,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "9f4c47e7-4610-4fea-8aca-8f40a682db1c"
+        }
+    ],
+    "00:43.120": [
+        {
+            "x": 100.0,
+            "y": 505.5,
+            "width": 190.0,
+            "height": 277.0,
+            "confidence": 0.8593040704727173,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "9e4a440f-3169-4d33-a013-ab5bea2317ba"
+        }
+    ],
+    "00:43.160": [
+        {
+            "x": 101.0,
+            "y": 509.0,
+            "width": 194.0,
+            "height": 282.0,
+            "confidence": 0.8675403594970703,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "6324ccb7-0365-4256-be31-cec0800dd95b"
+        }
+    ],
+    "00:43.200": [
+        {
+            "x": 101.0,
+            "y": 509.5,
+            "width": 196.0,
+            "height": 283.0,
+            "confidence": 0.8719338178634644,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "86f109a7-181b-435f-894e-1bf57b6ff441"
+        }
+    ],
+    "00:43.240": [
+        {
+            "x": 100.0,
+            "y": 506.5,
+            "width": 192.0,
+            "height": 289.0,
+            "confidence": 0.8711801171302795,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "db94438d-3f65-4783-88d3-050ce1d0664f"
+        }
+    ],
+    "00:43.280": [
+        {
+            "x": 103.0,
+            "y": 509.0,
+            "width": 198.0,
+            "height": 294.0,
+            "confidence": 0.8786202669143677,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "73bded12-0db0-4f20-9787-374a135424ee"
+        }
+    ],
+    "00:43.320": [
+        {
+            "x": 102.5,
+            "y": 504.5,
+            "width": 197.0,
+            "height": 293.0,
+            "confidence": 0.8838505744934082,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "9e351646-ba92-4a8e-850b-c2b1840549b6"
+        }
+    ],
+    "00:43.359": [
+        {
+            "x": 102.5,
+            "y": 504.0,
+            "width": 197.0,
+            "height": 294.0,
+            "confidence": 0.8819631338119507,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "50e6956b-f27a-45fa-9e49-15c1a4cdf3a9"
+        }
+    ],
+    "00:43.400": [
+        {
+            "x": 103.0,
+            "y": 504.5,
+            "width": 200.0,
+            "height": 293.0,
+            "confidence": 0.9049093723297119,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "ce0a7c61-7e13-482d-b0f7-906f9e9fd215"
+        }
+    ],
+    "00:43.440": [
+        {
+            "x": 103.5,
+            "y": 499.5,
+            "width": 205.0,
+            "height": 291.0,
+            "confidence": 0.8971417546272278,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "6d3e0f02-3661-4747-8046-dfde7979a4e3"
+        }
+    ],
+    "00:43.480": [
+        {
+            "x": 102.0,
+            "y": 497.5,
+            "width": 202.0,
+            "height": 301.0,
+            "confidence": 0.8573512434959412,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "c5b740b2-c721-46e9-a198-5e2e066a1694"
+        }
+    ],
+    "00:43.520": [
+        {
+            "x": 102.0,
+            "y": 499.0,
+            "width": 202.0,
+            "height": 300.0,
+            "confidence": 0.8579933047294617,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "62671e88-c40a-47ed-bcf4-0bcb31bbadd2"
+        }
+    ],
+    "00:43.560": [
+        {
+            "x": 103.5,
+            "y": 498.0,
+            "width": 205.0,
+            "height": 300.0,
+            "confidence": 0.8800289630889893,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "697053c3-ad6e-4f52-8474-49e722278fe9"
+        }
+    ],
+    "00:43.600": [
+        {
+            "x": 103.5,
+            "y": 490.0,
+            "width": 205.0,
+            "height": 304.0,
+            "confidence": 0.8900248408317566,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "61fd818f-d057-4532-8081-816eb9361471"
+        }
+    ],
+    "00:43.640": [
+        {
+            "x": 103.0,
+            "y": 490.5,
+            "width": 202.0,
+            "height": 299.0,
+            "confidence": 0.8997968435287476,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "652706b6-4ff6-435f-ab8c-fb6ee7357fed"
+        }
+    ],
+    "00:43.679": [
+        {
+            "x": 103.0,
+            "y": 493.5,
+            "width": 202.0,
+            "height": 291.0,
+            "confidence": 0.9096798896789551,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "5a03522f-d73a-4dfe-a369-f71e75a52311"
+        }
+    ],
+    "00:43.719": [
+        {
+            "x": 104.5,
+            "y": 492.0,
+            "width": 205.0,
+            "height": 288.0,
+            "confidence": 0.921663224697113,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "c0d59d86-844d-4ed7-842f-deaebd93e366"
+        }
+    ],
+    "00:43.760": [
+        {
+            "x": 105.5,
+            "y": 494.5,
+            "width": 207.0,
+            "height": 283.0,
+            "confidence": 0.9263606667518616,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "f57d445f-58f9-459f-96c9-6778d84c65cc"
+        }
+    ],
+    "00:43.800": [
+        {
+            "x": 105.5,
+            "y": 491.5,
+            "width": 205.0,
+            "height": 279.0,
+            "confidence": 0.9323418736457825,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "93cee8c2-43c6-48c3-a1d0-8e14e8186973"
+        }
+    ],
+    "00:43.840": [
+        {
+            "x": 104.5,
+            "y": 490.0,
+            "width": 205.0,
+            "height": 280.0,
+            "confidence": 0.9302616715431213,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "d5ee4d9c-c823-4e55-8ec5-d99ee2312e5d"
+        }
+    ],
+    "00:43.880": [
+        {
+            "x": 105.5,
+            "y": 487.5,
+            "width": 207.0,
+            "height": 283.0,
+            "confidence": 0.9300776124000549,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "dfda1060-872a-4a71-b48b-2a80b9586ae4"
+        }
+    ],
+    "00:43.920": [
+        {
+            "x": 104.5,
+            "y": 482.5,
+            "width": 205.0,
+            "height": 291.0,
+            "confidence": 0.9156816601753235,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "e76a60df-5455-49e7-ae3d-94a0bfea658f"
+        }
+    ],
+    "00:43.960": [
+        {
+            "x": 105.0,
+            "y": 483.0,
+            "width": 204.0,
+            "height": 280.0,
+            "confidence": 0.9236082434654236,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "583cb431-0c63-4b02-87e1-a81bfcb5dadd"
+        }
+    ],
+    "00:44.000": [
+        {
+            "x": 105.5,
+            "y": 484.0,
+            "width": 207.0,
+            "height": 286.0,
+            "confidence": 0.9089851975440979,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "678ff641-f751-4a82-9d03-266f72279906"
+        }
+    ],
+    "00:44.040": [
+        {
+            "x": 104.5,
+            "y": 477.5,
+            "width": 203.0,
+            "height": 287.0,
+            "confidence": 0.9130228757858276,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "251008b4-4d34-416b-bcdc-a6ee7b4f3149"
+        }
+    ],
+    "00:44.080": [
+        {
+            "x": 105.0,
+            "y": 478.0,
+            "width": 206.0,
+            "height": 284.0,
+            "confidence": 0.9045051336288452,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "fc8f4201-791b-404b-b58c-12e0c8078264"
+        }
+    ],
+    "00:44.120": [
+        {
+            "x": 106.0,
+            "y": 475.0,
+            "width": 204.0,
+            "height": 280.0,
+            "confidence": 0.9181703329086304,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "81df0711-612f-44df-b92b-e3a8bd214e5b"
+        }
+    ],
+    "00:44.160": [
+        {
+            "x": 104.5,
+            "y": 474.5,
+            "width": 205.0,
+            "height": 285.0,
+            "confidence": 0.8996309041976929,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "88ef9f94-0b24-4efb-b51e-acf64e89c3c6"
+        }
+    ],
+    "00:44.200": [
+        {
+            "x": 104.0,
+            "y": 474.5,
+            "width": 204.0,
+            "height": 287.0,
+            "confidence": 0.8974014520645142,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "f710cecb-316a-4338-8612-3fe2a3686e60"
+        }
+    ],
+    "00:44.240": [
+        {
+            "x": 105.5,
+            "y": 464.5,
+            "width": 211.0,
+            "height": 281.0,
+            "confidence": 0.8976655006408691,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "828679d3-7e0e-4c51-a355-1d3fbb1f7e1f"
+        }
+    ],
+    "00:44.280": [
+        {
+            "x": 106.5,
+            "y": 463.0,
+            "width": 211.0,
+            "height": 282.0,
+            "confidence": 0.9043198227882385,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "cbd19272-262b-4649-a1ac-8bed7c177bc8"
+        }
+    ],
+    "00:44.320": [
+        {
+            "x": 107.5,
+            "y": 465.0,
+            "width": 211.0,
+            "height": 270.0,
+            "confidence": 0.9099284410476685,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "0c9ca3ce-4bcc-48c0-bfed-eb434b228c83"
+        }
+    ],
+    "00:44.359": [
+        {
+            "x": 106.5,
+            "y": 466.0,
+            "width": 211.0,
+            "height": 272.0,
+            "confidence": 0.9022579193115234,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "2b9c56a0-9820-464e-b8e8-0d61e10c1f41"
+        }
+    ],
+    "00:44.400": [
+        {
+            "x": 106.5,
+            "y": 459.5,
+            "width": 209.0,
+            "height": 275.0,
+            "confidence": 0.9172691106796265,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "a564850e-c710-4f20-9fef-61f3299c4005"
+        }
+    ],
+    "00:44.440": [
+        {
+            "x": 110.0,
+            "y": 461.0,
+            "width": 212.0,
+            "height": 272.0,
+            "confidence": 0.9149823188781738,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "bf1d909b-256f-48b2-a90b-21f9ab6d8ff4"
+        }
+    ],
+    "00:44.480": [
+        {
+            "x": 108.5,
+            "y": 460.0,
+            "width": 215.0,
+            "height": 274.0,
+            "confidence": 0.9179695248603821,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "77b7e629-f49c-4111-8e70-104f4719190e"
+        }
+    ],
+    "00:44.520": [
+        {
+            "x": 108.0,
+            "y": 460.0,
+            "width": 214.0,
+            "height": 274.0,
+            "confidence": 0.9165945053100586,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "d74126b5-8353-4060-aa84-f2614a4b7f56"
+        }
+    ],
+    "00:44.560": [
+        {
+            "x": 108.5,
+            "y": 458.5,
+            "width": 213.0,
+            "height": 275.0,
+            "confidence": 0.9186403751373291,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "27377c70-0292-455b-b5ef-15d750520636"
+        }
+    ],
+    "00:44.600": [
+        {
+            "x": 109.5,
+            "y": 456.0,
+            "width": 215.0,
+            "height": 276.0,
+            "confidence": 0.92558753490448,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "bec0ea0a-c098-4670-9733-8cb715965deb"
+        }
+    ],
+    "00:44.640": [
+        {
+            "x": 107.5,
+            "y": 449.5,
+            "width": 213.0,
+            "height": 273.0,
+            "confidence": 0.931827962398529,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "fb9e340c-cfe6-4f26-af20-b8d5c9c9b14f"
+        }
+    ],
+    "00:44.679": [
+        {
+            "x": 108.0,
+            "y": 449.5,
+            "width": 214.0,
+            "height": 273.0,
+            "confidence": 0.932901918888092,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "8f68fcea-de99-4b94-a19d-4d1f77f40649"
+        }
+    ],
+    "00:44.719": [
+        {
+            "x": 107.5,
+            "y": 446.5,
+            "width": 213.0,
+            "height": 273.0,
+            "confidence": 0.9314074516296387,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "ac4218f0-310e-42da-967e-311b4119e56d"
+        }
+    ],
+    "00:44.760": [
+        {
+            "x": 109.5,
+            "y": 448.0,
+            "width": 215.0,
+            "height": 276.0,
+            "confidence": 0.9321245551109314,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "3dc7c827-621d-4b77-bdf8-cc097854d119"
+        }
+    ],
+    "00:44.800": [
+        {
+            "x": 107.0,
+            "y": 446.5,
+            "width": 212.0,
+            "height": 277.0,
+            "confidence": 0.9270917177200317,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "b3c4a633-c5ef-46b9-9f66-bbe10b4d9494"
+        }
+    ],
+    "00:44.840": [
+        {
+            "x": 105.5,
+            "y": 445.0,
+            "width": 211.0,
+            "height": 276.0,
+            "confidence": 0.9041045904159546,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "46e092a6-bb8c-421b-b721-6fd6e3a0e56a"
+        }
+    ],
+    "00:44.880": [
+        {
+            "x": 105.5,
+            "y": 444.0,
+            "width": 209.0,
+            "height": 270.0,
+            "confidence": 0.9225336313247681,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "8c97e741-68c2-4a9d-b237-5c1df0d0bbb5"
+        }
+    ],
+    "00:44.920": [
+        {
+            "x": 106.5,
+            "y": 443.0,
+            "width": 211.0,
+            "height": 272.0,
+            "confidence": 0.8882176876068115,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "2dd94957-cc7c-4329-aa9a-6e7714e189c4"
+        }
+    ],
+    "00:44.960": [
+        {
+            "x": 107.0,
+            "y": 438.5,
+            "width": 214.0,
+            "height": 267.0,
+            "confidence": 0.8178414106369019,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "eeeee69a-3514-4bcd-bba4-1b50014b2f39"
+        }
+    ],
+    "00:45.000": [
+        {
+            "x": 106.5,
+            "y": 440.0,
+            "width": 211.0,
+            "height": 270.0,
+            "confidence": 0.8633414506912231,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "c4105571-774a-4dab-95c2-c59ab9ffc757"
+        }
+    ],
+    "00:45.040": [
+        {
+            "x": 108.5,
+            "y": 434.5,
+            "width": 211.0,
+            "height": 265.0,
+            "confidence": 0.8771758079528809,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "34310fe9-30fd-4240-8b17-d61de4144229"
+        }
+    ],
+    "00:45.080": [
+        {
+            "x": 109.0,
+            "y": 431.0,
+            "width": 210.0,
+            "height": 260.0,
+            "confidence": 0.8947526216506958,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "6399a877-54a2-49a8-84a6-a9dbe334e3e6"
+        }
+    ],
+    "00:45.120": [
+        {
+            "x": 110.0,
+            "y": 424.5,
+            "width": 220.0,
+            "height": 249.0,
+            "confidence": 0.7707204222679138,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "a736925e-9231-4c85-91f0-89c5cf4f9994"
+        }
+    ],
+    "00:45.160": [
+        {
+            "x": 109.5,
+            "y": 429.5,
+            "width": 215.0,
+            "height": 267.0,
+            "confidence": 0.7334129810333252,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "de776ebc-cfce-4823-91f7-3410371267ef"
+        }
+    ],
+    "00:45.200": [
+        {
+            "x": 110.0,
+            "y": 429.5,
+            "width": 216.0,
+            "height": 267.0,
+            "confidence": 0.7363404035568237,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "c1630381-43f9-42f3-af46-269b99e7632d"
+        }
+    ],
+    "00:45.240": [
+        {
+            "x": 113.5,
+            "y": 425.5,
+            "width": 217.0,
+            "height": 263.0,
+            "confidence": 0.65217125415802,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "489d790a-ece2-4be3-906d-c4cfbdef0bbe"
+        }
+    ],
+    "00:45.280": [
+        {
+            "x": 112.0,
+            "y": 420.5,
+            "width": 220.0,
+            "height": 251.0,
+            "confidence": 0.8506336808204651,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "dd1321be-3946-4121-b8bc-bbf0cc15313e"
+        }
+    ],
+    "00:45.320": [
+        {
+            "x": 114.5,
+            "y": 420.0,
+            "width": 221.0,
+            "height": 254.0,
+            "confidence": 0.8031835556030273,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "d8d9a664-2686-4a20-b205-1b730043a23d"
+        }
+    ],
+    "00:45.359": [
+        {
+            "x": 115.0,
+            "y": 420.0,
+            "width": 220.0,
+            "height": 254.0,
+            "confidence": 0.8032251000404358,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "b9648296-8a65-43fb-b785-edbbaa9ade1a"
+        }
+    ],
+    "00:45.400": [
+        {
+            "x": 111.5,
+            "y": 411.0,
+            "width": 217.0,
+            "height": 240.0,
+            "confidence": 0.6987845301628113,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "83b6d46f-f909-43dd-85bc-8b0e66de1c0c"
+        }
+    ],
+    "00:45.440": [
+        {
+            "x": 112.5,
+            "y": 405.5,
+            "width": 217.0,
+            "height": 237.0,
+            "confidence": 0.612465500831604,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "d66215cb-187d-48d7-93c1-4857fa0d4026"
+        }
+    ],
+    "00:45.480": [],
+    "00:45.520": [],
+    "00:45.560": [],
+    "00:45.600": [],
+    "00:45.640": [],
+    "00:45.679": [],
+    "00:45.719": [],
+    "00:45.760": [],
+    "00:45.800": [],
+    "00:45.840": [
+        {
+            "x": 83.5,
+            "y": 376.0,
+            "width": 165.0,
+            "height": 222.0,
+            "confidence": 0.48204705119132996,
+            "class": "pistol",
+            "class_id": 0,
+            "detection_id": "f9068436-aaab-4b1a-b03b-9de1316fcbdf"
+        }
+    ],
+    "00:45.880": [],
+    "00:45.920": [],
+    "00:45.960": [],
+    "00:46.000": [],
+    "00:46.040": [],
+    "00:46.080": [],
+    "00:46.120": [],
+    "00:46.160": [],
+    "00:46.200": [],
+    "00:46.240": [],
+    "00:46.280": [],
+    "00:46.320": [],
+    "00:46.359": [],
+    "00:46.400": [],
+    "00:46.440": [],
+    "00:46.480": [],
+    "00:46.520": [],
+    "00:46.560": [],
+    "00:46.600": [],
+    "00:46.640": [],
+    "00:46.679": [],
+    "00:46.719": [],
+    "00:46.760": [],
+    "00:46.800": [],
+    "00:46.840": [],
+    "00:46.880": [],
+    "00:46.920": [],
+    "00:46.960": [],
+    "00:47.000": [],
+    "00:47.040": [],
+    "00:47.080": [],
+    "00:47.120": [],
+    "00:47.160": [],
+    "00:47.200": [],
+    "00:47.240": [],
+    "00:47.280": [],
+    "00:47.320": [],
+    "00:47.359": [],
+    "00:47.400": [],
+    "00:47.440": [],
+    "00:47.480": [],
+    "00:47.520": [],
+    "00:47.560": [],
+    "00:47.600": [],
+    "00:47.640": [],
+    "00:47.679": [],
+    "00:47.719": [],
+    "00:47.760": [],
+    "00:47.800": [],
+    "00:47.840": [],
+    "00:47.880": [],
+    "00:47.920": [],
+    "00:47.960": [],
+    "00:48.000": [],
+    "00:48.040": [],
+    "00:48.080": [],
+    "00:48.120": [],
+    "00:48.160": [],
+    "00:48.200": [],
+    "00:48.240": [],
+    "00:48.280": [],
+    "00:48.320": [],
+    "00:48.359": [],
+    "00:48.400": [],
+    "00:48.440": [],
+    "00:48.480": [],
+    "00:48.520": [],
+    "00:48.560": [],
+    "00:48.600": [],
+    "00:48.640": [],
+    "00:48.679": [],
+    "00:48.719": [],
+    "00:48.760": [],
+    "00:48.800": [],
+    "00:48.840": [],
+    "00:48.880": [],
+    "00:48.920": [],
+    "00:48.960": [],
+    "00:49.000": [],
+    "00:49.040": [],
+    "00:49.079": [],
+    "00:49.120": [],
+    "00:49.160": [],
+    "00:49.200": [],
+    "00:49.240": [],
+    "00:49.280": [],
+    "00:49.320": [],
+    "00:49.359": [],
+    "00:49.400": [],
+    "00:49.440": [],
+    "00:49.480": [],
+    "00:49.520": [],
+    "00:49.560": [],
+    "00:49.600": [],
+    "00:49.640": [],
+    "00:49.680": [],
+    "00:49.719": [],
+    "00:49.760": [],
+    "00:49.800": [],
+    "00:49.840": [],
+    "00:49.880": [],
+    "00:49.920": [],
+    "00:49.960": [],
+    "00:50.000": [],
+    "00:50.040": [],
+    "00:50.080": [],
+    "00:50.120": [],
+    "00:50.160": [],
+    "00:50.200": [],
+    "00:50.240": [],
+    "00:50.280": [],
+    "00:50.320": [],
+    "00:50.359": [],
+    "00:50.400": [],
+    "00:50.440": [],
+    "00:50.480": [],
+    "00:50.520": [],
+    "00:50.560": [],
+    "00:50.600": [],
+    "00:50.640": [],
+    "00:50.680": [],
+    "00:50.719": [],
+    "00:50.760": [],
+    "00:50.800": [],
+    "00:50.840": [],
+    "00:50.880": [],
+    "00:50.920": [],
+    "00:50.960": [],
+    "00:51.000": [],
+    "00:51.040": []
+}
