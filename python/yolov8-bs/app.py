@@ -4,7 +4,7 @@ from ultralytics import YOLO
 model = YOLO('best.pt')
 
 model.predict(
-   source='https://cdn.bizwnews.com/news/photo/202406/84655_90881_153.jpg',
+   source='https://sateconomy.co.kr/news/data/20181123/p179589475849522_794.jpg',
    conf=0.25,
    save=True,
    project=".",
