@@ -3,7 +3,6 @@ import torch
 import time
 
 if __name__ == '__main__':
-
     # 모델 초기화
     # model = YOLO('yolov8n.pt')
     model = YOLO('/Users/lune/Documents/GitHub/project/python/datasetTrain/result/weights/last.pt')
@@ -40,7 +39,7 @@ if __name__ == '__main__':
         optimizer='auto', 
         cache=True, 
         imgsz=640,
-        resume=True
+        pretrained=True
     )
     train_end = time.time()
     
