@@ -26,3 +26,6 @@ node/conf/*
 
 # chatbot_langchain/constants.py
 **/constants.py
+
+## python/yolov8-bs
+python/yolov8/result
