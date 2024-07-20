@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2238b1d4-3e10-433f-9c81-d83ccf19c0c0" name="Changes" comment="" />
+    <list default="true" id="2238b1d4-3e10-433f-9c81-d83ccf19c0c0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/yolov8-webcam/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/yolov8-webcam/app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,42 +34,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.corona_01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.corona_02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.corona_03.executor&quot;: &quot;Run&quot;,
-    &quot;Python.corona_04.executor&quot;: &quot;Run&quot;,
-    &quot;Python.corona_api_01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p350_getPelicanaStore.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p360_getCheogajlpStore.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p368_seleniumTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p379_concatTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p407_foliumTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p413_getGeocoding.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p415_getGeocoding.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p423_chickenResult.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p434_wordCloud.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p443_aliceSteve.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p455_konlpy.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p457_presidentFrequency.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p490_xmlEx.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p498_getJson.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p500_jsonTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p515_BusanHospital.executor&quot;: &quot;Run&quot;,
-    &quot;Python.p520_ulsanBicycle.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lune/Documents/GitHub/project/python/dataProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.app.executor": "Run",
+    "Python.corona_01.executor": "Run",
+    "Python.corona_02.executor": "Run",
+    "Python.corona_03.executor": "Run",
+    "Python.corona_04.executor": "Run",
+    "Python.corona_api_01.executor": "Run",
+    "Python.p350_getPelicanaStore.executor": "Run",
+    "Python.p360_getCheogajlpStore.executor": "Run",
+    "Python.p368_seleniumTest.executor": "Run",
+    "Python.p379_concatTest.executor": "Run",
+    "Python.p407_foliumTest.executor": "Run",
+    "Python.p413_getGeocoding.executor": "Run",
+    "Python.p415_getGeocoding.executor": "Run",
+    "Python.p423_chickenResult.executor": "Run",
+    "Python.p434_wordCloud.executor": "Run",
+    "Python.p443_aliceSteve.executor": "Run",
+    "Python.p455_konlpy.executor": "Run",
+    "Python.p457_presidentFrequency.executor": "Run",
+    "Python.p490_xmlEx.executor": "Run",
+    "Python.p498_getJson.executor": "Run",
+    "Python.p500_jsonTest.executor": "Run",
+    "Python.p515_BusanHospital.executor": "Run",
+    "Python.p520_ulsanBicycle.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/lune/Documents/GitHub/project/python/dataProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/python/dataProject" />
@@ -75,7 +79,30 @@
       <recent name="$PROJECT_DIR$/python/corona" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.corona_api_01">
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/yolov8-webcam" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/yolov8-webcam/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="corona_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <option name="ENV_FILES" value="" />
@@ -168,36 +195,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="p520_ulsanBicycle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="project" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/dataProject" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/dataProject/p520_ulsanBicycle.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.corona_api_01" />
         <item itemvalue="Python.corona_04" />
         <item itemvalue="Python.corona_03" />
         <item itemvalue="Python.corona_01" />
-        <item itemvalue="Python.p520_ulsanBicycle" />
       </list>
     </recent_temporary>
   </component>
@@ -218,6 +222,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713602058607</updated>
       <workItem from="1713602059726" duration="17144000" />
+      <workItem from="1721479732827" duration="301000" />
     </task>
     <servers />
   </component>
@@ -233,6 +238,7 @@
     <SUITE FILE_PATH="coverage/project$p455_konlpy.coverage" NAME="p455_konlpy Coverage Results" MODIFIED="1713614534139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
     <SUITE FILE_PATH="coverage/project$p520_ulsanBicycle.coverage" NAME="p520_ulsanBicycle Coverage Results" MODIFIED="1713616285757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
     <SUITE FILE_PATH="coverage/project$p457_presidentFrequency.coverage" NAME="p457_presidentFrequency Coverage Results" MODIFIED="1713615267083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
+    <SUITE FILE_PATH="coverage/project$app.coverage" NAME="app Coverage Results" MODIFIED="1721479932888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/yolov8-webcam" />
     <SUITE FILE_PATH="coverage/project$p434_wordCloud.coverage" NAME="p434_wordCloud Coverage Results" MODIFIED="1713613095531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
     <SUITE FILE_PATH="coverage/project$p360_getCheogajlpStore.coverage" NAME="p360_getCheogajlpStore Coverage Results" MODIFIED="1713603113714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
     <SUITE FILE_PATH="coverage/project$p515_BusanHospital.coverage" NAME="p515_BusanHospital Coverage Results" MODIFIED="1713615928790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
@@ -243,7 +249,7 @@
     <SUITE FILE_PATH="coverage/project$corona_01.coverage" NAME="corona_01 Coverage Results" MODIFIED="1713619160019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
     <SUITE FILE_PATH="coverage/project$p415_getGeocoding.coverage" NAME="p415_getGeocoding Coverage Results" MODIFIED="1713612602960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
     <SUITE FILE_PATH="coverage/project$p443_aliceSteve.coverage" NAME="p443_aliceSteve Coverage Results" MODIFIED="1713613137302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
-    <SUITE FILE_PATH="coverage/project$corona_api_01.coverage" NAME="corona_api_01 Coverage Results" MODIFIED="1713620178277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
+    <SUITE FILE_PATH="coverage/project$corona_api_01.coverage" NAME="corona_api_01 Coverage Results" MODIFIED="1721479892834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
     <SUITE FILE_PATH="coverage/project$corona_03.coverage" NAME="corona_03 Coverage Results" MODIFIED="1713619566767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
     <SUITE FILE_PATH="coverage/project$p368_seleniumTest.coverage" NAME="p368_seleniumTest Coverage Results" MODIFIED="1713603162582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
     <SUITE FILE_PATH="coverage/project$p407_foliumTest.coverage" NAME="p407_foliumTest Coverage Results" MODIFIED="1713612170161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/dataProject" />
