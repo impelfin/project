@@ -7,7 +7,7 @@ model = YOLO('besta.pt')
 device = torch.device("mps")
 
 model.predict(
-   source='beverage3.png',
+   source='snac2.png',
    conf=0.25,
    save=True,
    project=".",
