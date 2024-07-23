@@ -4,8 +4,8 @@ import time
 
 if __name__ == '__main__':
     # 모델 초기화
-    model = YOLO('yolov8n.pt')
-    # model = YOLO('/Users/lune/Documents/GitHub/project/python/sauron_dataset_new/result/weights/last.pt')
+    # model = YOLO('yolov8n.pt')
+    model = YOLO('/Users/lune/Documents/GitHub/project/python/sauron_dataset_new/result/weights/last.pt')
 
     # torch 데이터 유형, 백엔드 설정
     dtype = torch.float
@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     # 학습 설정
     data_path = 'sauron.yaml'
-    epochs = 3
+    epochs = 7
     batch_size = 32
 
     # 콜백 함수 정의
