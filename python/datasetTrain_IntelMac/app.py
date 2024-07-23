@@ -14,8 +14,8 @@ if __name__ == '__main__':
 
     # 학습 설정
     data_path = 'dataset.yaml'
-    epochs = 3
-    batch_size = 32
+    epochs = 1
+    batch_size = 16
 
     # 콜백 함수 정의
     def my_callback(epoch, logs):
