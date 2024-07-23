@@ -1,6 +1,7 @@
 from ultralytics import YOLO
-# import torch
+import torch
 import time
+import os
 
 if __name__ == '__main__':
     # 모델 초기화
@@ -8,14 +9,16 @@ if __name__ == '__main__':
     # model = YOLO('/Users/lune/Documents/GitHub/project/python/datasetTrain/result/weights/last.pt')
 
     # torch 데이터 유형, 백엔드 설정
-    # dtype = torch.float
-    # device = torch.device("mps")
-    device = [0, 1]
+    dtype = torch.float
+    device = torch.device("mps")
+
+    os.environ["PYTORCH_MPS_HIGH_WATERMARK_RATIO"] = "0.0"
+    # os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
 
     # 학습 설정
     data_path = 'dataset.yaml'
     epochs = 1
-    batch_size = 16
+    batch_size = 32 
 
     # 콜백 함수 정의
     def my_callback(epoch, logs):
