@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     # 학습 설정
     data_path = 'sauron.yaml'
-    epochs = 50
+    epochs = 300
     batch_size = 32
 
     # 콜백 함수 정의
