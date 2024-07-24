@@ -12,7 +12,7 @@ if __name__ == '__main__':
     device = torch.device("mps")
 
     # 학습 설정
-    data_path = 'snac.yaml'
+    data_path = 'snack.yaml'
     epochs = 300
     batch_size = 32
 
