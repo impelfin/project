@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolov8n.pt
-data: snac.yaml
+data: snack.yaml
 epochs: 300
 time: null
 patience: 100
