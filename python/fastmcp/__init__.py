@@ -1,1 +1,3 @@
-# from .core import FastMCP
+# __init__.py
+
+from .core import FastMCP
