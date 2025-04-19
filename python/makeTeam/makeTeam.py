@@ -7,7 +7,6 @@ data = pd.read_csv('list.csv', encoding = 'UTF-8')
 team_list=[]
 
 team = int(input("How much team? : "))
-max_person = int(input("How many person per team? : "))
 
 grade1 = []
 grade2 = []
@@ -20,17 +19,13 @@ for i in range (len(data)):
 random.shuffle(grade1)
 random.shuffle(grade2)
 
-for i in range (0,team):
+for i in range(team):
     team_list.append([])
 
-for i in range (len(grade1)):
-    team_list[i] = [grade1[i]]
+# grade1과 grade2를 합쳐서 한 명씩 팀에 배정
+all_students = grade1 + grade2
+for idx, name in enumerate(all_students):
+    team_list[idx % team].append(name)
 
-for i in range (len(grade2)):
-    if i >= team:
-        team_list[i-team].append(grade2[i])
-    else:
-        team_list[i].append(grade2[i])
-
-for i in range (len(team_list)):
+for i in range(len(team_list)):
     print('team', i+1, ' : ', team_list[i])
