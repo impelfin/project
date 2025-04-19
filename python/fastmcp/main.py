@@ -242,7 +242,7 @@ async def start_summarize(document: str, context: Context) -> str:
         # First try as a web URL if it looks like one
         if re.match(r'^https?://', document):
             headers = {'User-Agent': 'Mozilla/5.0'}
-            async with aiohttp.ClientSession(headers=headers) as session:
+            async with aiohttp.ClientSession(headers=headers, timeout=aiohttp.ClientTimeout(total=600)) as session:
                 async with session.get(document) as response:
                     if response.status != 200:
                         return f"Error: HTTP {response.status}"
@@ -307,8 +307,6 @@ async def start_summarize(document: str, context: Context) -> str:
             return chunk_summaries[0]
     except Exception as e:
         return f"Error: {str(e)}"
-
-
 
 
 # Ensure that the mcp instance is referenced to prevent issues with code execution.
