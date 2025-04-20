@@ -2,49 +2,47 @@
 
 import os
 import sys
+from PIL import Image as PILImage
+from urllib.parse import urlparse, unquote
+from openai import AsyncOpenAI
+import httpx
+from pydantic import BaseModel
+import io
+import json
+    
 sys.stderr.write(f"[DEBUG] sys.path = {sys.path}\n")
 sys.stderr.write(f"[DEBUG] current dir = {os.getcwd()}\n")
 
-# MCP 서버 엔트리
+# MCP Server Entry
 from fastmcp import FastMCP, Context
-from PIL import Image as PILImage
-import io
-from openai import AsyncOpenAI
 
-# secret.json에서 OPENAI_API_KEY 읽기
-import json
-import os
+# Message definitions (imported from base.py)
+from prompts.base import Message, UserMessage, AssistantMessage
 
+# Read OPENAI_API_KEY from secret.json
 SECRET_PATH = os.path.join(os.path.dirname(__file__), 'secret.json')
 try:
     with open(SECRET_PATH, 'r') as f:
         secret = json.load(f)
     OPENAI_API_KEY = secret.get('OPENAI_API_KEY')
     if not OPENAI_API_KEY:
-        raise RuntimeError('OPENAI_API_KEY가 secret.json에 없습니다.')
+        raise RuntimeError('OPENAI_API_KEY is missing in secret.json.')
 except FileNotFoundError:
-    raise RuntimeError('secret.json 파일을 찾을 수 없습니다.')
+    raise RuntimeError('secret.json file not found.')
 except json.JSONDecodeError:
-    raise RuntimeError('secret.json 파일이 잘못된 형식입니다.')
+    raise RuntimeError('secret.json file is malformed.')
 
-# OpenAI 클라이언트 생성
+# Create OpenAI client
 client = AsyncOpenAI(api_key=OPENAI_API_KEY)
 
-# MCP 인스턴스 생성
+# Create MCP instance
 mcp = FastMCP("FastMCP Example", dependencies=["pandas", "numpy"])
 
 sys.stderr.write("[DEBUG] FastMCP instance created.\n")
 
-# 외부 라이브러리
-import httpx
-from pydantic import BaseModel
-
-# 메시지 정의 (base.py에서 import)
-from prompts.base import Message, UserMessage, AssistantMessage
-
 
 # -------------------------------
-# Pydantic 모델 정의
+# Pydantic model definitions
 # -------------------------------
 
 class ImageData(BaseModel):
@@ -63,6 +61,7 @@ class UserInfo(BaseModel):
 @mcp.tool()
 async def send_notification(user: UserInfo, message: str) -> dict:
     """Sends a notification to a user if requested."""
+
     if user.notify:
         sys.stderr.write(f"Notifying user {user.user_id}: {message}\n")
         return {"status": "sent", "user_id": user.user_id}
@@ -71,6 +70,7 @@ async def send_notification(user: UserInfo, message: str) -> dict:
 @mcp.tool()
 def get_stock_price(ticker: str) -> float:
     """Gets the current price for a stock ticker."""
+    
     prices = {"AAPL": 180.50, "GOOG": 140.20}
     return prices.get(ticker.upper(), 0.0)
 
@@ -123,11 +123,26 @@ async def get_system_status(system_id: str) -> dict:
 
 @mcp.tool()
 async def process_large_file(file_uri: str, ctx: Context) -> str:
-    """Processes a large file, reporting progress and reading resources."""
+    """Processes a large file, reporting progress and reading resources. Supports both MCP resource URIs and file:/// URIs."""
     await ctx.info(f"Starting processing for {file_uri}")
-    # Read the resource using the context
-    file_content_resource = await ctx.read_resource(file_uri)
-    file_content = file_content_resource[0].content  # Assuming single text content
+    file_content = None
+
+    if file_uri.startswith("file://"):
+        # Read file directly from file:/// path
+        import os
+        from urllib.parse import urlparse, unquote
+        parsed = urlparse(file_uri)
+        path = unquote(parsed.path)
+        if not os.path.exists(path):
+            await ctx.error(f"File not found: {path}")
+            return f"File not found: {path}"
+        with open(path, "r", encoding="utf-8") as f:
+            file_content = f.read()
+    else:
+        # 기존 MCP 리소스 방식
+        file_content_resource = await ctx.read_resource(file_uri)
+        file_content = file_content_resource[0].content  # Assuming single text content
+
     lines = file_content.splitlines()
     total_lines = len(lines)
 
@@ -145,24 +160,65 @@ async def process_large_file(file_uri: str, ctx: Context) -> str:
 # -------------------------------
 
 @mcp.tool()
-def create_thumbnail(image_data: ImageData) -> ImageData:
-    """Creates a 100x100 thumbnail from the provided image."""
-    img = PILImage.open(io.BytesIO(image_data.data))
+def create_thumbnail(image_data) -> str:
+    """
+    Creates a 100x100 thumbnail from the provided image.
+    Saves it as '<original_filename>_thumbnail.<extension>' and returns the file path.
+    Supports both file:/// and plain local file paths as input.
+    """
+
+    if isinstance(image_data, str):
+        if image_data.startswith("file://"):
+            # Read image directly from file:/// path
+            parsed = urlparse(image_data)
+            path = unquote(parsed.path)
+        else:
+            # Treat as plain local file path
+            path = image_data
+        if not os.path.exists(path):
+            raise FileNotFoundError(f"Image file not found: {path}")
+        with open(path, "rb") as f:
+            img_bytes = f.read()
+        img = PILImage.open(io.BytesIO(img_bytes))
+        # Original filename with _thumbnail added
+        base, ext = os.path.splitext(os.path.basename(path))
+        output_path = os.path.join(os.path.dirname(path), f"{base}_thumbnail{ext}")
+    elif isinstance(image_data, ImageData):
+        img = PILImage.open(io.BytesIO(image_data.data))
+        output_path = "thumbnail.png"
+    else:
+        raise ValueError("image_data must be an ImageData object or a file path string")
     img.thumbnail((100, 100))
-    buffer = io.BytesIO()
-    img.save(buffer, format="PNG")
-    buffer.seek(0)
-    # Return a new ImageData object with the thumbnail data
-    return ImageData(data=buffer.getvalue(), format="png")
+    img.save(output_path, format="PNG")
+    img.show()
+    return output_path
 
 @mcp.tool()
-def load_image_from_disk(path: str) -> ImageData:
-    """Loads an image from the specified path."""
-    with open(path, 'rb') as f:
+def load_image_from_disk(path: str) -> str:
+    """
+    Loads an image from the specified path (supports file:///), 
+    saves it as '<original_filename>_loaded.<extension>', 
+    shows the image, and returns the file path.
+    """
+    
+    # Support file:/// path
+    if isinstance(path, str) and path.startswith("file://"):
+        parsed = urlparse(path)
+        real_path = unquote(parsed.path)
+    else:
+        real_path = path
+    if not os.path.exists(real_path):
+        raise FileNotFoundError(f"Image file not found: {real_path}")
+    with open(real_path, 'rb') as f:
         data = f.read()
-    # Get format from file extension
-    format = path.split('.')[-1].lower()
-    return ImageData(data=data, format=format)
+    base, ext = os.path.splitext(os.path.basename(real_path))
+    output_path = os.path.join(os.path.dirname(real_path), f"{base}_loaded{ext}")
+    with open(output_path, 'wb') as f:
+        f.write(data)
+    # Show image (using OS default image viewer)
+    img = PILImage.open(io.BytesIO(data))
+    img.show()
+    return output_path
 
 
 # -------------------------------
@@ -172,6 +228,7 @@ def load_image_from_disk(path: str) -> ImageData:
 @mcp.tool()
 async def generate_poem(topic: str, context: Context) -> str:
     """Generate a short poem about the given topic."""
+
     # Use OpenAI API directly
     response = await client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -193,6 +250,7 @@ async def summarize_document(document: str, context: Context) -> str:
     Returns:
         A concise summary of the document
     """
+
     # Check if the input is a resource URI
     if document.startswith(('system://', 'config://', 'db://', 'data://')):        
         try:
