@@ -11,9 +11,24 @@ from PIL import Image as PILImage
 import io
 from openai import AsyncOpenAI
 
-# OpenAI 클라이언트 생성
-client = AsyncOpenAI()
+# secret.json에서 OPENAI_API_KEY 읽기
+import json
+import os
 
+SECRET_PATH = os.path.join(os.path.dirname(__file__), 'secret.json')
+try:
+    with open(SECRET_PATH, 'r') as f:
+        secret = json.load(f)
+    OPENAI_API_KEY = secret.get('OPENAI_API_KEY')
+    if not OPENAI_API_KEY:
+        raise RuntimeError('OPENAI_API_KEY가 secret.json에 없습니다.')
+except FileNotFoundError:
+    raise RuntimeError('secret.json 파일을 찾을 수 없습니다.')
+except json.JSONDecodeError:
+    raise RuntimeError('secret.json 파일이 잘못된 형식입니다.')
+
+# OpenAI 클라이언트 생성
+client = AsyncOpenAI(api_key=OPENAI_API_KEY)
 
 # MCP 인스턴스 생성
 mcp = FastMCP("FastMCP Example", dependencies=["pandas", "numpy"])
@@ -147,9 +162,6 @@ def load_image_from_disk(path: str) -> ImageData:
 # -------------------------------
 # LLM Sampling
 # -------------------------------
-
-# -- SERVER SIDE --
-# Create a server that requests LLM completions from the client
 
 @mcp.tool()
 async def generate_poem(topic: str, context: Context) -> str:
