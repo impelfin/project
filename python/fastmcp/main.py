@@ -46,6 +46,7 @@ from prompts.base import Message, UserMessage, AssistantMessage
 # -------------------------------
 # Pydantic 모델 정의
 # -------------------------------
+
 class ImageData(BaseModel):
     data: bytes
     format: str = 'png'
@@ -58,6 +59,7 @@ class UserInfo(BaseModel):
 # -------------------------------
 # Tools
 # -------------------------------
+
 @mcp.tool()
 async def send_notification(user: UserInfo, message: str) -> dict:
     """Sends a notification to a user if requested."""
@@ -76,6 +78,7 @@ def get_stock_price(ticker: str) -> float:
 # -------------------------------
 # Resources
 # -------------------------------
+
 @mcp.resource("config://app-version")
 def get_app_version() -> str:
     return "v2.1.0"
@@ -93,6 +96,7 @@ def get_categories() -> list[str]:
 # -------------------------------
 # Prompts
 # -------------------------------
+
 @mcp.prompt()
 def ask_review(code_snippet: str) -> str:
     """Generates a standard code review request."""
@@ -110,6 +114,7 @@ def debug_session_start(error_message: str) -> list[Message]:
 # -------------------------------
 # Context Resources & Tools
 # -------------------------------
+
 @mcp.resource("system://status/{system_id}")
 async def get_system_status(system_id: str) -> dict:
     """Checks system status and logs information."""
@@ -158,6 +163,7 @@ def load_image_from_disk(path: str) -> ImageData:
     # Get format from file extension
     format = path.split('.')[-1].lower()
     return ImageData(data=data, format=format)
+
 
 # -------------------------------
 # LLM Sampling
