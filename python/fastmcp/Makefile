@@ -7,7 +7,7 @@ PROXY_PORT=6277
 # 서버 실행
 run:
 	@echo "Starting FastMCP server..."
-	@FASTMCP_TIMEOUT=300000 npx @modelcontextprotocol/inspector fastmcp run server.py
+	@FASTMCP_TIMEOUT=300000 npx @modelcontextprotocol/inspector fastmcp run main.py
 
 # 실행 중인 서버 정리
 stop:
