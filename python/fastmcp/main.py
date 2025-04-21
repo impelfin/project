@@ -103,11 +103,17 @@ def ask_review(code_snippet: str) -> str:
     return f"Please review the following code snippet for potential bugs and style issues:\n```python\n{code_snippet}\n```"
 
 @mcp.prompt()
-def debug_session_start(error_message: str) -> list[Message]:
+def debug_session_start(error_message: str) -> list[dict]:
     """Initiates a debugging help session."""
     return [
-        UserMessage(f"I encountered an error:\n{error_message}"),
-        AssistantMessage("Okay, I can help with that. Can you provide the full traceback and tell me what you were trying to do?")
+        {
+            "role": "user",
+            "content": f"I encountered an error:\n{error_message}"
+        },
+        {
+            "role": "assistant",
+            "content": "Okay, I can help with that. Can you provide the full traceback and tell me what you were trying to do?"
+        }
     ]
 
 
