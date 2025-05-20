@@ -5,7 +5,8 @@ data = pd.read_csv('list.csv', encoding = 'UTF-8')
 
 team_list=[]
 
-team = int(input("How much team? : "))
+# team = int(input("How much team? : "))
+team = 8;
 
 grade1 = []
 grade2 = []
